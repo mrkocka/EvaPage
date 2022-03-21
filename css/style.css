@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    
+}
+
+/*--------------------------------------------------------------HEADER------------------------------------------------------------------------------------------*/
+
 /*Felső menü*/
 .navUp{
     background-color: #E4D8C9; 
@@ -11,17 +18,20 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .socIcon{
-    width: 25%;
+    /* background-color: rgba(0, 0, 255, 0.247); */
+    width: 33.33%;
     font-size: 1.4rem;
     padding: .3rem;
     display: flex;
     align-items: center;
+   
  
 }
 
 .socIcon .fa{
     margin-right: 1rem;
     color: black;
+    
 }
 
 .socIcon .fa:hover{
@@ -31,11 +41,13 @@
 }
 
 
+
 .socIcon:first-child{
-    margin-left: 1rem;
+     margin-left: 1rem;
 }
 .navLink{
-    width: 50%;
+    /* background-color: rgba(0, 0, 0, 0.322); */
+    width: 33.33%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -45,8 +57,7 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    letter-spacing: .3rem;
-    margin-right: 1rem;
+    letter-spacing: rem;
 }
 .navLink a:hover{
     color: rgba(0, 0, 0, 0.418);
@@ -54,7 +65,8 @@
 }
 
 .envelope{
-    width: 25%;
+    /* background-color: rgba(165, 42, 42, 0.356); */
+    width: 33.33%;
     font-size: 1.4rem;
     padding: .3rem;
     display: flex;
@@ -125,24 +137,67 @@
 }
 
 
+/*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
+
+#about{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #eae2d6bb;
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.aboutImg{
+    width: 35rem;
+    height: 40rem;
+    background-color: grey;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.aboutImg img{
+    width: 30rem;
+    height: auto;
+}
+
+.aboutText{
+    width: 40rem;
+    height: 28rem;
+    margin: auto 0 auto 0;
+    background-color: burlywood ;
+}
+
 /*-------------------------------Media Queries---------------------------------------------------- */
 
+@media screen and (min-width: 1924) {
+    .twoImg{
+        height: 59.400rem;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .navUp{
         flex-direction: column;
+        justify-content: center;
         height: auto;
         align-items: center;
-        
     }
 
     .socIcon{
-        width: auto;
+        width: 100%;
         justify-content: center;
         margin-bottom: 1rem;
     }
     .navLink{
-        width: auto;
+        width: 80%;
         margin-bottom: 1rem;
 
     }
@@ -153,5 +208,25 @@
     .navDownLink{
         width: 80%;
     }
+
+    .socIcon:last-child{
+        margin-right: 0;
+    }
+
+    .socIcon:first-child{
+         margin-left: 0; 
+    }
     
+    #about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutImg{
+        width: auto;
+    }
+    
+    .aboutText{
+        width: auto;
+    }
+
     }
