@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Felső menü*/
+.navUp{
+    background-color: #E4D8C9; 
+    height: 2.5rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.socIcon{
+    width: 25%;
+    font-size: 1.4rem;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+ 
+}
+
+.socIcon .fa{
+    margin-right: 1rem;
+    color: black;
+}
+
+.socIcon .fa:hover{
+    color: rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+.socIcon:first-child{
+    margin-left: 1rem;
+}
+.navLink{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Petit Formal Script', cursive;
+}
+.navLink a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    margin-right: 1rem;
+}
+.navLink a:hover{
+    color: rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+}
+
+.envelope{
+    width: 25%;
+    font-size: 1.4rem;
+    padding: .3rem;
+    display: flex;
+    justify-content: end;
+}
+
+.envelope .fa{
+    margin-right: 2rem;
+}
+
+.envelope .fa:hover{
+    color: rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/*Középső szakasz a logonak*/
+.banner{
+    background-color:#EAE2D6;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    padding: 2rem;
+}
+.banner h1{
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    margin-bottom: 1rem;
+}
+.banner p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/*Alsó menü*/
+
+.navDown{
+    background-color: #E4D8C9; 
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.navDownLink{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.navDownLink a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    font-family: 'Petit Formal Script', cursive;
+}
+
+.navDownLink a:hover {
+    color: rgba(0, 0, 0, 0.418);
+    cursor: pointer;
+}
+
+
+/*-------------------------------Media Queries---------------------------------------------------- */
+
+
+@media screen and (max-width: 900px) {
+    .navUp{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        
+    }
+
+    .socIcon{
+        width: auto;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .navLink{
+        width: auto;
+        margin-bottom: 1rem;
+
+    }
+    .envelope{
+        width: 100%;
+    }
+
+    .navDownLink{
+        width: 80%;
+    }
+    
+    }
