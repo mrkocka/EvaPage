@@ -5,7 +5,7 @@
 }
 
 body{
-    
+    background-color:#eae2d69c
 }
 
 /*--------------------------------------------------------------HEADER------------------------------------------------------------------------------------------*/
@@ -140,99 +140,56 @@ body{
 /*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
 #about{
     display: flex;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.aboutA{
-    background-color: blue;
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 8.5rem;
+    margin-bottom: 2rem;
+    padding: 0 3rem 0 3rem;
 }
 
-.aboutA1 {
-    max-width: 60%;
+.aboutImag{
+    background-color: rgba(0, 0, 255, 0.37);
+    width: 50%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profilImage{
+    width: 50rem;
+    height: 45rem;
+    background-color: gray;
+    
+}
+
+.aboutImag img{
+    max-width: 100%;
+    width: 640px;
     height: auto;
-    margin-left: 1rem;
 }
 
-.aboutA2{
-    max-width: 30%;
-    height: auto;
-    margin: 1rem 0 1rem 1rem;
-}
 
-.aboutB{
-    background-color: brown;
+.aboutTxt{
+    background-color: rgba(165, 42, 42, 0.329);
     width: 50%;
 }
-.aboutBox{
+
+/* .aboutBox{
     background-color: whitesmoke;
-    min-width: 30rem;
-    height: 18rem;
+    min-width: 35rem;
+    height: 19rem;
     position: absolute;
-    top: 80%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-}
-
-
-/*-------------------------------Media Queries---------------------------------------------------- */
+} */
 
 
 
-@media screen and (max-width: 700px) {
-    .aboutBox{
-        min-width: 20rem;
-        height: 12rem;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    
-    }
-}
 
-@media screen and (max-width: 900px) {
-    .navUp{
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        align-items: center;
-    }
 
-    .socIcon{
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-    .navLink{
-        width: 80%;
-        margin-bottom: 1rem;
 
-    }
-    .envelope{
-        width: 100%;
-    }
-
-    .navDownLink{
-        width: 80%;
-        
-        
-    }
-
-    .socIcon:last-child{
-        margin-right: 0;
-    }
-
-    .socIcon:first-child{
-         margin-left: 0; 
-    }
-    
-    
-    }
 
    

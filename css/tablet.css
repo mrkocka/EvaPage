@@ -1,0 +1,35 @@
+.navUp{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+}
+
+.socIcon{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.navLink{
+    width: 80%;
+    margin-bottom: 1rem;
+
+}
+.envelope{
+    width: 100%;
+}
+
+.navDownLink{
+    width: 80%;
+    
+    
+}
+
+.socIcon:last-child{
+    margin-right: 0;
+}
+
+.socIcon:first-child{
+     margin-left: 0; 
+}
+
