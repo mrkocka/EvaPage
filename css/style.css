@@ -138,48 +138,61 @@ body{
 
 
 /*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
-
 #about{
-    width: 100%;
-    height: 50rem;
     display: flex;
-    justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: #eae2d6bb;
-    background-image: url(../img/1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 2rem;
 }
 
-.aboutImg{
-    width: 35rem;
-    height: 40rem;
-    background-color: grey;
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-}
-.aboutImg img{
-    width: 30rem;
+.aboutA{
+    background-color: blue;
+    width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.aboutText{
-    width: 40rem;
-    height: 28rem;
-    margin: auto 0 auto 0;
-    background-color: burlywood ;
+.aboutA1 {
+    max-width: 60%;
+    height: auto;
+    margin-left: 1rem;
 }
+
+.aboutA2{
+    max-width: 30%;
+    height: auto;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.aboutB{
+    background-color: brown;
+    width: 50%;
+}
+.aboutBox{
+    background-color: whitesmoke;
+    min-width: 30rem;
+    height: 18rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 
 /*-------------------------------Media Queries---------------------------------------------------- */
 
-@media screen and (min-width: 1924) {
-    .twoImg{
-        height: 59.400rem;
+
+
+@media screen and (max-width: 700px) {
+    .aboutBox{
+        min-width: 20rem;
+        height: 12rem;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
     }
 }
 
@@ -219,16 +232,7 @@ body{
          margin-left: 0; 
     }
     
-    #about{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .aboutImg{
-        width: auto;
-    }
     
-    .aboutText{
-        width: auto;
     }
 
-    }
+   
