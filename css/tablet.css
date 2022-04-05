@@ -33,3 +33,13 @@
      margin-left: 0; 
 }
 
+
+/*--------About----------------------*/
+
+#about{
+    flex-direction: column;
+}
+
+.aboutImag{
+  /*   width: 100%; */
+}

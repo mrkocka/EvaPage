@@ -144,47 +144,45 @@ body{
     margin-top: 8.5rem;
     margin-bottom: 2rem;
     padding: 0 3rem 0 3rem;
+    
 }
 
 .aboutImag{
     background-color: rgba(0, 0, 255, 0.37);
-    width: 50%;
+    min-width: 50%;
+    width: 100%;
     height: 50rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    height: auto;
 }
 
-.profilImage{
-    width: 50rem;
-    height: 45rem;
-    background-color: gray;
-    
+.aboutImag h2{
+    padding: 2rem 0 2rem 0;
+    font-family: 'Petit Formal Script', cursive;
 }
 
-.aboutImag img{
+
+#about img{
     max-width: 100%;
     width: 640px;
     height: auto;
+    margin-bottom: 2rem;
+    outline: 2px solid black;
 }
 
 
 .aboutTxt{
     background-color: rgba(165, 42, 42, 0.329);
-    width: 50%;
+    min-width: 50%;
+    width: 100%;
+    
 }
 
-/* .aboutBox{
-    background-color: whitesmoke;
-    min-width: 35rem;
-    height: 19rem;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-} */
 
 
 
