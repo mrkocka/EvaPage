@@ -46,18 +46,21 @@ body{
      margin-left: 1rem;
 }
 .navLink{
-    /* background-color: rgba(0, 0, 0, 0.322); */
-    width: 33.33%;
+   /*  background-color: rgba(0, 0, 0, 0.322);  */
+    width: 40%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     font-family: 'Petit Formal Script', cursive;
+    gap: 2rem;
 }
 .navLink a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    letter-spacing: rem;
+    font-size: 1.5rem;
+    text-align: center;
+   
 }
 .navLink a:hover{
     color: rgba(0, 0, 0, 0.418);
@@ -110,30 +113,37 @@ body{
 
 .navDown{
     background-color: #E4D8C9; 
-    height: 2.5rem;
+    height:auto;
     display: flex;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 .navDownLink{
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 2.5rem;
     
+}
+.menuButton{
+    display: none;
 }
 .navDownLink a{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    letter-spacing: .3rem;
+    padding: .5rem;
     font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .navDownLink a:hover {
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.418);
 }
 
 
@@ -180,7 +190,7 @@ body{
     margin: 2rem 0 4rem 0;
 }
 
-#contactButton {
+.contactButton {
     font-family: 'Noto Serif', serif;
     outline: 1px solid white;
     background-color: #7e5c4e;
@@ -278,7 +288,7 @@ body{
     }
   }
 
-#contactButton:hover{
+.contactButton:hover{
     background-color: #7e5c4e7e;
     cursor: pointer;
 }
@@ -394,13 +404,103 @@ body{
     background-size:cover;
 }
 
+/*------------------------------Contact----------------------------------------------------------*/
 
+#contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.384)), url(../img/contact_bg.jpg);
+    width: 70%;
+    height: auto;
+    padding: 2rem 0 2rem 0;
+    margin:20rem auto 10rem auto;
+    border-radius: 25px/75px;
+    box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    gap: 2rem;
+}
+#contact input{
+    width: 15rem;
+    height: 3.2rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 25px/75px;
+    background-color:#EAE2D6;
+}
+
+#contact textarea{
+    border-radius: 25px/75px;
+    width: 25rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color:#EAE2D6;
+}
+#contact .btn{
+    font-family: 'Noto Serif', serif;
+    background-color: #7e5c4e;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    border-radius: 25px/75px;
+    height: auto;
+   
+}
+#contact .btn:hover{
+
+    cursor: pointer;
+}
 
 /*------------------------------Footer----------------------------------------------------------*/
 
 footer{
-    height: 8rem;
+    height: auto;
     background-color:#EAE2D6;
     box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
     margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  /*   margin: 2rem auto 0 auto; */
+}
+
+.footerImage{
+    background-color: rgba(128, 255, 0, 0.37);
+    width: 33.33%;
+
+}
+
+.footerAdress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(165, 42, 42, 0.411);
+    width: 33.33%;
+}
+
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 127, 80, 0.103);
+    width: 33.33%;
+}
+
+.copyright{
+    text-align: center;
 }

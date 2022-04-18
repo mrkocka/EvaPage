@@ -34,5 +34,20 @@
 }
 
 
+.navDownLink{
+    display: none;
+}
+
+.menuButton{
+    display: flex;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+.menuButton:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+
 /*--------About----------------------*/
 
