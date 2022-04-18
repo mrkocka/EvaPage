@@ -50,4 +50,40 @@
 
 
 /*--------About----------------------*/
+#about{
+    width: 90%;
+}
 
+
+
+/*--------------------------------------------------------------Portfolio------------------------------------------------------------------------------------------*/
+.box{
+    justify-content: center;
+}
+.box a{
+    width: 80%;
+    height: 8rem;
+    margin-top: 20rem;
+    padding: 1rem;
+    
+}
+
+
+/*--------Footer----------------------*/
+.footerContent{
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.footerAdress{
+    order: 1;
+    width: 100%;
+ 
+}
+.footerImage{
+    order: 2;
+}
+
+.footerMenu{
+    width: 100%;
+}

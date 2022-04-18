@@ -7,6 +7,9 @@
 body{
     background-color:#eae2d685
 }
+a{
+    text-decoration: none;
+}
 
 /*--------------------------------------------------------------HEADER------------------------------------------------------------------------------------------*/
 
@@ -478,9 +481,16 @@ footer{
 }
 
 .footerImage{
-    background-color: rgba(128, 255, 0, 0.37);
     width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
 
+.footerImage img{
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    padding-top: 2rem;
 }
 
 .footerAdress{
@@ -488,19 +498,38 @@ footer{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: rgba(165, 42, 42, 0.411);
     width: 33.33%;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.3rem;
+}
+
+.footerAdress .fa{
+    font-size: 2rem;
+    margin-right: .5rem;
 }
 
 .footerMenu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    background-color: rgba(255, 127, 80, 0.103);
+    gap: 1.5rem;
     width: 33.33%;
+    margin-top: 1rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
 }
+.footerMenu a{
+    color: black;
+}
+
+.footerMenu a:hover{
+    color: rgba(0, 0, 0, 0.596);
+}
+
 
 .copyright{
     text-align: center;
+    font-family: 'Noto Serif', serif;
 }
