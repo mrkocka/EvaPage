@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,12 @@
     <title>EvaPage</title>
 </head>
 <body>
-    
+    <div class="containerbtn">
+        <div class="gotopbtn">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </div>
+
     <header>
         <nav class="navUp">
             
@@ -31,12 +37,13 @@
 
             </div>
             <div class="navLink">
-                <a href="#">Rólam</a>
-                <a href="#">Munkáim</a>
-                <a href="#">Kapcsolat</a>
+                <a href="#aboutImage">Rólam</a>
+                <a href="#portfolio">Munkáim</a>
+                <a href="#contact">Kapcsolat</a>
             </div>
-            <div class="envelope">
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <div class="language">
+                <span>eng</span>
+                <span>hun</span>
             </div>
         </nav>
         <div class="banner">
@@ -60,7 +67,7 @@
     </header>
     <main>
         <section id="about">
-            <img src="./img/profil.jpg" alt="profilkep">
+            <img id="aboutImage" src="./img/profil.jpg" alt="profilkep">
             <h2>Rohonczi Éva vagyok!</h2>
             <h3>megnevezés</h3>
             <div class="aboutText">
@@ -161,5 +168,7 @@
             <p>COPYRIGHT ©2022 Mr.Kocka</p>
        </section>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>

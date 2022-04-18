@@ -7,9 +7,72 @@
 body{
     background-color:#eae2d685
 }
+html{
+    scroll-behavior: smooth;
+} 
 a{
     text-decoration: none;
 }
+
+.gotopbtn{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #7e5c4e;
+    top: -120px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .6s ease-out;
+}
+
+.gotopbtn.active{
+    top: calc(100% - 100px);
+}
+
+.gotopbtn:hover{
+    background-color: #7e5c4e7e; 
+
+}
+
+.gotopbtn::before,
+.gotopbtn::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #7e5c4e;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    animation: waves 2s linear infinite;
+}
+
+.gotopbtn::after{
+    animation-delay: 1s;
+}
+
+.gotopbtn:hover::before,
+.gotopbtn:hover::after{
+    border-color: #7e5c4e7e; 
+    
+ 
+}
+
+@keyframes waves{
+    to{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
 
 /*--------------------------------------------------------------HEADER------------------------------------------------------------------------------------------*/
 
@@ -70,23 +133,28 @@ a{
     cursor: pointer;
 }
 
-.envelope{
-    /* background-color: rgba(165, 42, 42, 0.356); */
+.language{
     width: 33.33%;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: .3rem;
     display: flex;
+    align-items: center;
     justify-content: end;
+    gap: 1rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 500;
 }
 
-.envelope .fa{
+.language :last-child{
     margin-right: 2rem;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.418);
+    font-weight:900
 }
 
-.envelope .fa:hover{
+.language span:hover{
     color: rgba(0, 0, 0, 0.418);
     cursor: pointer;
-    font-size: 1.5rem;
 }
 
 /*Középső szakasz a logonak*/
@@ -315,7 +383,7 @@ a{
 .box{
     width: 60%;
     height: 20rem;
-    margin: 6rem auto 0 auto ;
+    margin: 10rem auto 0 auto ;
     border-radius: 25px/75px;
     padding: 1rem;
     display: flex;
@@ -410,11 +478,14 @@ a{
 /*------------------------------Contact----------------------------------------------------------*/
 
 #contact{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.384),rgba(0, 0, 0, 0.384)), url(../img/contact_bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.527)), url(../img/contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 70%;
     height: auto;
     padding: 2rem 0 2rem 0;
-    margin:20rem auto 10rem auto;
+    margin:25rem auto 8rem auto;
     border-radius: 25px/75px;
     box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
     display: flex;
@@ -431,7 +502,7 @@ a{
     gap: 2rem;
 }
 #contact input{
-    width: 15rem;
+    width: 20rem;
     height: 3.2rem;
     font-size: 1.2rem;
     padding: 1rem;
@@ -447,6 +518,7 @@ a{
     background-color:#EAE2D6;
 }
 #contact .btn{
+    width: 10rem;
     font-family: 'Noto Serif', serif;
     background-color: #7e5c4e;
     color: whitesmoke;
