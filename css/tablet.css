@@ -38,43 +38,64 @@
      margin-left: 0; 
 }
 
+.language{
+    width: 100%;
+    font-size: 1rem;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    font-family: 'Petit Formal Script', cursive;
+    font-weight: 500;
+}
+
+.language :last-child{
+    margin-right: .5rem;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.418);
+    font-weight:900
+}
+
 
 .navDownLink{
     display: none;
 }
 
 .menuButton{
-    display: flex;
+    display: block;
     font-size: 2.8rem;
     padding: .5rem;
-   /*  background-color: burlywood; */
     margin-right: 1.5rem;
-}
-.menuButton:hover{
     cursor: pointer;
 }
 
-.mobilMenu{
-    background-color: rgba(0, 0, 255, 0.295);
-    height: 50rem;
+ #js-mobilMenu{
+    background-color:#eae2d6da;
+    height: 25rem;
     width: 100%;
     position: absolute;
-    z-index: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 4rem;
     gap: 2rem;
-  
+    transform: translateY(-70rem);
+    transition: transform 350ms ease-in-out;
 }
 
-.mobilMenu a{
+.nemu-active{
+    transform: translateY(0);
+}
+
+#js-mobilMenu a{
     text-decoration: none;
     color: black;
     font-weight: bold;
     font-family: 'Petit Formal Script', cursive;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: .3rem;
    
 }
 
@@ -92,12 +113,16 @@
     justify-content: center;
 }
 .box a{
-    width: 80%;
-    height: 8rem;
+    width: auto;
+    height: auto;
     margin-top: 20rem;
     padding: 1rem;
-    
+    margin-left: 0;
 }
+
+
+
+
 
 
 /*--------Footer----------------------*/
@@ -117,4 +142,12 @@
 
 .footerMenu{
     width: 100%;
+}
+
+/*------------------------------Contact----------------------------------------------------------*/
+
+
+#contact textarea{
+    width: 90%;
+    
 }

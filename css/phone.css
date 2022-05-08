@@ -1,0 +1,77 @@
+.navLink{
+    width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-family: 'Petit Formal Script', cursive;
+     gap: 1rem;
+ }
+
+ 
+
+
+ /*Középső szakasz a logonak*/
+.banner{
+    background-color:#EAE2D6;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    /* padding: 2rem; */
+}
+.banner h1{
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+}
+.banner p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
+#about{
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    background-color:#EAE2D6;
+    border-radius: 25px/75px;
+    box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
+}
+
+/*--------------------------------------------------------------Portfolio------------------------------------------------------------------------------------------*/
+
+#portfolio{
+    padding: 1rem;
+}
+
+.box{
+    width: 100%;
+    height: 20rem;
+    margin: 10rem auto 0 auto ;
+    border-radius: 25px/75px;
+    padding: 1rem;
+    display: flex;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
+}
+
+.box a {
+    width: 100%;
+    margin-left: 0rem;
+    height: auto;
+    justify-content:center;
+}
+
+/*------------------------------Contact----------------------------------------------------------*/
+
+#contact{
+    width: 90%;
+    padding: 1rem;
+
+} 

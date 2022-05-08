@@ -26,7 +26,6 @@
 
     <header>
         <nav class="navUp">
-            
             <div class="socIcon">
                 <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -56,19 +55,19 @@
                 <a href="#">Egyéb</a>
                 <a href="#">Versek</a>
             </div>
-            <div class="menuButton">
-                <span><i id="js-OpenButton" class="fa fa-caret-square-o-down" ></i></span>
-                <!-- <i class="fa fa-minus-square-o" aria-hidden="true"></i> -->
-            </div>
+            <span>
+                <i id="js-openButton" class="menuButton fa fa-caret-square-o-down"></i>
+            </span>
         </nav>
-        <nav class="mobilMenu">
+       
+    </header>
+        <nav id="js-mobilMenu" class="">
             <a href="#">Olaj Festmények</a>
             <a href="#">Akril Festmények</a>
             <a href="#">Akvarell, Pasztell, Szén Képek</a>
             <a href="#">Egyéb</a>
             <a href="#">Versek</a>
         </nav>
-    </header>
     <main>
         <section id="about">
             <img id="aboutImage" src="./img/profil.jpg" alt="profilkep">
@@ -148,7 +147,7 @@
                 <input  class="btn" type="submit" value="Küldés" id="send">
             </form>
         </section>
-
+ 
     </main>
     <footer>
        <section class="footerContent">
