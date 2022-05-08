@@ -159,7 +159,7 @@ a{
 
 /*Középső szakasz a logonak*/
 .banner{
-    background-color:#EAE2D6;
+    background-color:#EAE2D6; 
     height: auto;
     display: flex;
     flex-direction: column;
@@ -167,13 +167,13 @@ a{
     align-items: center;
     font-family: 'Petit Formal Script', cursive;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem 0 4rem 0;
     gap: 1.5rem;
 }
 .banner h1{
     font-size: 4rem;
     letter-spacing: 1rem;
-    padding-bottom: 4rem 0 1rem 0;
+    
 }
 .banner p{
     font-size: 1.2rem;
@@ -182,7 +182,7 @@ a{
 }
 
 .banner :last-child{
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     font-size: 1rem;
     
 }
