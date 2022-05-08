@@ -75,17 +75,16 @@
     height: 25rem;
     width: 100%;
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
     padding-top: 4rem;
     gap: 2rem;
-    transform: translateY(-70rem);
     transition: transform 350ms ease-in-out;
 }
 
 .nemu-active{
-    transform: translateY(0);
+    display: flex;
 }
 
 #js-mobilMenu a{
@@ -111,9 +110,10 @@
 /*--------------------------------------------------------------Portfolio------------------------------------------------------------------------------------------*/
 .box{
     justify-content: center;
+    width: 90%;
 }
 .box a{
-    width: auto;
+    width: 80%;
     height: auto;
     margin-top: 20rem;
     padding: 1rem;
