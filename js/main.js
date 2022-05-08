@@ -1,25 +1,6 @@
+// ScrollTopp Butto
 
 
-
-// Menu Button
-
-     /*const openButton =  document.getElementById('js-openButton');
-     const mobilMenu = document.getElementById('js-mobilMenu');
-
-     openButton.addEventListener('click' , OpenMenu);
-
-     function OpenMenu(){
-         mobilMenu.style.display = 'flex'; 
-         openButton.classList.toggle('fa-caret-square-o-down')
-         openButton.classList.add('fa-minus-square-o') 
-         
-        
-         
-     }*/
-
-
-
- // ScrollTopp Button
     $(window).scroll(function(){
         if($(this).scrollTop() > 150)
             $(".gotopbtn").addClass("active");
@@ -29,3 +10,34 @@
     $('.gotopbtn').click(function(){
         $("html, body").animate({scrollTop:0})
     }); 
+
+
+// Menu Button
+
+     const openButton =  document.getElementById('js-openButton');
+     const minusButton = document.getElementById('js-minusButton');
+     const mobilMenu = document.getElementById('js-mobilMenu');
+     
+
+     //Open Menu
+     openButton.addEventListener('click' , OpenMenu);
+
+     function OpenMenu(){
+        openButton.style.display ='none';
+        minusButton.style.display = 'block'; 
+        mobilMenu.style.opacity = '1';
+     }
+
+
+     //Close Button
+     minusButton.addEventListener('click', closeMenu);
+
+     function closeMenu(){
+        openButton.style.display ='block';
+        minusButton.style.display = 'none'; 
+        mobilMenu.style.opacity = '0';
+     }
+
+
+
+ 

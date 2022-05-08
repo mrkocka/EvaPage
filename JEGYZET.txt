@@ -7,3 +7,19 @@ https://www.youtube.com/watch?v=h5v2LVFmbMY
 
 Grid galery
 https://www.youtube.com/watch?v=oqn6Pp_bPW0&t=22s
+
+
+
+
+
+
+const mobilMenu = document.getElementById('js-mobilMenu');
+      
+
+     openButton.addEventListener('click' , OpenMenu);
+
+     function OpenMenu(){
+         openButton.style.display ='none';
+
+         /*   */
+        

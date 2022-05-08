@@ -5,10 +5,15 @@
      align-items: center;
      flex-direction: column;
      font-family: 'Petit Formal Script', cursive;
-     gap: 1rem;
+     gap: 1.2rem;
  }
 
- 
+ .navLink a {
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    
+   
+}
 
 
  /*Középső szakasz a logonak*/
@@ -34,6 +39,24 @@
 }
 
 
+#js-mobilMenu{
+    background-color:#eae2d6da;
+    height: 22rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    gap: 1.9rem;
+    opacity: 0;
+}
+
+#js-mobilMenu a{
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
 /*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
 #about{
     width: 90%;
@@ -42,6 +65,13 @@
     background-color:#EAE2D6;
     border-radius: 25px/75px;
     box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
+}
+
+
+
+#about h2{
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 /*--------------------------------------------------------------Portfolio------------------------------------------------------------------------------------------*/
