@@ -66,15 +66,17 @@
     display: block;
     font-size: 2.8rem;
     padding: .5rem;
-    margin-right: 1.5rem;
     cursor: pointer;
-}
+    text-align:center;
+    width: 100%;
+  
+} 
 #js-minusButton {
     display: none;
 }
 
  #js-mobilMenu{
-    background-color:#eae2d6da;
+    background-color:#eae2d6f3;
     height: 25rem;
     width: 100%;
     position: absolute;
@@ -83,13 +85,10 @@
     flex-direction: column;
     padding-top: 4rem;
     gap: 2rem;
+    top: 10rem;
     opacity: 0;
-    /* opacity: transform 100ms ease-in-out; */
 }
 
-/* .nemu-active{
-    display: flex;
-} */
 
 #js-mobilMenu a{
     text-decoration: none;
@@ -101,6 +100,13 @@
     letter-spacing: .3rem;
    
 }
+
+
+
+.banner{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 
 
