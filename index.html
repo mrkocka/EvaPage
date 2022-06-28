@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
@@ -39,18 +40,36 @@
                 <a href="#contact">Kapcsolat</a>
             </div>
             <span class="menuButton">
-                <i id="js-openButton" class=" fa fa-caret-square-o-down"></i>
-                <i id="js-minusButton" class=" fa fa-minus-square-o"></i>
+                <!-- <i id="js-openButton" class=" fa fa-caret-square-o-down"></i>
+                <i id="js-minusButton" class=" fa fa-minus-square-o"></i> -->
             </span>
-            <div class="language">
-                <span>eng</span>
-                <span>hun</span>
+            <div class="mobilMenu">
+                <span class="mobilMenuButton">
+                    <i id="js-openButton" class="fa-solid fa-square-caret-down"></i>
+                    <i id="js-minusButton" class="none fa-solid fa-square-minus"></i>
+                </span>
+                <span class="languageButton">
+                    <span>eng</span>
+                    <span>hun</span>
+                </span>
             </div>
+            <nav id="js-mobilMenu" class="menuInactive" >
+                <a href="#aboutImage">Rólam</a>
+                <hr>
+                <a href="#">Olaj Festmények</a>
+                <a href="#">Akril Festmények</a>
+                <a href="#">Akvarell, Pasztell, Szén Képek</a>
+                <a href="#">Egyéb</a>
+                <a href="#">Versek</a>
+                <hr>
+                <a href="#contact">Kapcsolat</a>
+        </nav>
         </nav>
         <div class="banner">
             <h1>ÉviLOGÓ</h1>
             <p>Minden művész saját lelkébe mártja ecsetét, és saját szívét viszi a vászonra.</p>
             <p>Henry Ward Beecher</p>
+           
         </div>
         <nav class="navDown">
             <div class="navDownLink">
@@ -63,13 +82,7 @@
         </nav>
        
     </header>
-        <nav id="js-mobilMenu" class="">
-            <a href="#">Olaj Festmények</a>
-            <a href="#">Akril Festmények</a>
-            <a href="#">Akvarell, Pasztell, Szén Képek</a>
-            <a href="#">Egyéb</a>
-            <a href="#">Versek</a>
-        </nav>
+       
     <main>
         <section id="about">
             <img id="aboutImage" src="./img/profil.jpg" alt="profilkep">

@@ -73,6 +73,12 @@ a{
     }
 }
 
+.none{
+    display: none;
+}
+.block{
+    display: flex;
+}
 
 /*--------------------------------------------------------------HEADER------------------------------------------------------------------------------------------*/
 
@@ -133,29 +139,45 @@ a{
     cursor: pointer;
 }
 
-.language{
-    width: 33.33%;
-    font-size: 1rem;
-    padding: .3rem;
+
+.mobilMenu{
+    display: none;
+}
+
+.mobilMenuButton{
+    font-size: 1.8rem;
+    padding-left: .5rem;
+    display: flex;
+}
+
+
+/*Nav*/
+
+#js-mobilMenu{
+    background-color:#eae2d6fd;
+    height: 25rem;
+    width: 100%;
+  
+    top: 0;
     display: flex;
     align-items: center;
-    justify-content: end;
-    gap: 1rem;
-    font-family: 'Petit Formal Script', cursive;
-    font-weight: 500;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 2rem;
+    top: 15rem;
+    transition: transform 350ms ease-in-out;
+}
+.menuInactive{
+    transform: translateY(-50rem);
+    
 }
 
-.language :last-child{
-    margin-right: 2rem;
-    text-decoration: underline;
-    color: rgba(0, 0, 0, 0.418);
-    font-weight:900
-}
+hr{
+    width: 70%;
+    color: black;
+   
+  }
 
-.language span:hover{
-    color: rgba(0, 0, 0, 0.418);
-    cursor: pointer;
-}
 
 /*Középső szakasz a logonak*/
 .banner{
@@ -226,7 +248,7 @@ a{
 
 #js-mobilMenu{
     display: none;
-}
+} 
 
 /*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
 #about{
@@ -442,10 +464,7 @@ a{
 }
 
 
-/* #portfolio:last-child{
-        margin-bottom: 5rem;
-}
- */
+
 
 
 /*Boxok*/

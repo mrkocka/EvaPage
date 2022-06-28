@@ -21,23 +21,25 @@
 
      //Open Menu
      openButton.addEventListener('click' , OpenMenu);
-
-     function OpenMenu(){
-        openButton.style.display ='none';
-        minusButton.style.display = 'block'; 
-        mobilMenu.style.opacity = '1';
-     }
-
+     function OpenMenu (){
+        console.log('Próba!')
+        mobilMenu.classList.remove("menuInactive");
+        openButton.classList.add("none");
+        minusButton.classList.remove("none");
+    }
+   
 
      //Close Button
      minusButton.addEventListener('click', closeMenu);
 
      function closeMenu(){
-        openButton.style.display ='block';
-        minusButton.style.display = 'none'; 
-        mobilMenu.style.opacity = '0';
+        console.log('Zárom')
+        mobilMenu.classList.add("menuInactive");
+        minusButton.classList.add("none");
+        openButton.classList.remove("none");
+        
+        return
+
      }
-
-
 
  
