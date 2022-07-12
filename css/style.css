@@ -107,7 +107,7 @@ a {
   margin-left: 1rem;
 }
 .navLink {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   width: 33.33%;
   display: flex;
   justify-content: center;
