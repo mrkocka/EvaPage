@@ -1,38 +1,30 @@
 /*Mobile Reset*/
 
-.socIcon{
+.socIcon {
   display: none;
 }
-.navLink{
+.navLink {
   display: none;
 }
-.menuButton{
-  display: none;
-}
-
-.containerbtn{
+.menuButton {
   display: none;
 }
 
-
-
+.containerbtn {
+  display: none;
+}
 
 /*Mobile Nav*/
 
-
-
-
 /*---------------------Header---------------------------------------------------*/
-.banner p{
-  font-size: .9rem;
-  margin: 0 .8rem 0 .8rem ;
-
+.banner p {
+  font-size: 0.9rem;
+  margin: 0 0.8rem 0 0.8rem;
 }
 
-.banner :last-child{
+.banner :last-child {
   /* padding-bottom: 2rem; */
-  font-size: .8rem;
-  
+  font-size: 0.8rem;
 }
 
 /*Középső szakasz a logonak*/
@@ -43,11 +35,9 @@
   padding: 1rem;
 }
 
-
-
 #js-mobilMenu {
-  background-color:#eae2d6fd;
-  height:95vh;
+  background-color: #eae2d6fd;
+  height: 95vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -55,28 +45,23 @@
   top: 3rem;
   padding-top: 6rem;
   gap: 1.9rem;
-
 }
- 
+
 #js-mobilMenu a {
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
-
 }
-hr{
+hr {
   width: 70%;
   color: black;
- 
 }
-
-
 
 /*--------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------*/
 #about {
   width: 90%;
   height: 30rem;
   padding: 1rem;
-  margin: 10rem auto 3rem auto;
+  margin: 16rem auto 0em auto;
   background-color: #eae2d6;
   border-radius: 25px/75px;
   box-shadow: rgba(0, 0, 0, 0.836) 0px 5px 15px;
@@ -86,13 +71,12 @@ hr{
   font-size: 1.5rem;
   text-align: center;
 }
-.aboutText{
-  font-size: .8rem;
+.aboutText {
+  font-size: 0.8rem;
   padding: 0;
 }
 
-
-#about img{
+#about img {
   max-width: 100%;
   width: 180px;
   height: auto;
@@ -133,22 +117,29 @@ hr{
 
 .text h2 {
   font-size: 1.2rem;
-  
 }
-.text h3{
+.text h3 {
   font-size: 1rem;
   text-align: center;
   width: 15rem;
   margin: 0 auto 0 auto;
 }
 
-
-
-
-
 /*------------------------------Contact----------------------------------------------------------*/
 
 #contact {
   width: 90%;
   padding: 1rem;
+  margin-top: 8rem;
+}
+
+#contact form {
+  margin-top: 4rem;
+}
+
+/*--------------------------------- uploadingSection-------------------------*/
+
+
+.uploadingSection h1 {
+  font-size: 1.3rem;
 }

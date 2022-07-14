@@ -128,7 +128,7 @@ a {
 }
 
 .lanuage {
-    width: 33.33%;
+  width: 33.33%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -386,7 +386,10 @@ hr {
 }
 
 .contactButton:hover {
-  background-color: #7e5c4e7e;
+  background-color: #eae2d6;
+  outline: 3.5px solid #7e5c4e;
+  color: #7e5c4e;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -540,8 +543,13 @@ hr {
   letter-spacing: 0.1rem;
   border-radius: 25px/75px;
   height: auto;
+  border: none;
 }
 #contact .btn:hover {
+  background-color: #7e5c4ea9;
+  outline: 3.5px solid #7e5c4e;
+  color: whitesmoke;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -555,6 +563,15 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+footer a{
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: rgba(0, 0, 0, 0.596);
 }
 
 .footerContent {
@@ -614,4 +631,20 @@ footer {
 .copyright {
   text-align: center;
   font-family: "Noto Serif", serif;
+}
+
+/*--------------------------------- uploadingSection-------------------------*/
+
+.uploadingSection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 10rem;
+  margin-bottom: -8rem;
+}
+
+.uploadingSection h1 {
+  font-size: 2.5rem;
+  font-family: "Petit Formal Script", cursive;
 }
