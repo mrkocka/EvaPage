@@ -13,8 +13,8 @@
 
 .item {
   transition: 0.5s ease-in-out;
-  text-align: center;
   align-self: center;
+  justify-content: center;
  
 }
 
